@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pult</title><link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black">
+    <header class="flex justify-center mt-[30px]">
+        <div class="w-[300px] h-[665px] bg-white rounded-3xl">
+            <div class="bg-[#434a56] w-[260px] h-[520px] rounded-3xl ml-[20px] mt-[20px] absolute">
+                <h1 class="text-[25px] text-center ml-[20px] mt-[40px] absolute">Set Temperature (°C)</h1>
+                <div class="mt-[75px]">
+                <div class="absolute ml-[10px]">
+                <p>AUTO</p>
+                <p>COOL</p>
+                <p>DRY</p>
+                <p>HEAT</p>
+            </div>
+            <div class="ml-[215px] absolute">
+                <p>FAN</p>
+                <p>HIGH</p>
+                <p>MED</p>
+                <p>LOW</p>
+            </div>
+        </div>
+                <div class="w-[150px] h-[70px] bg-[gray] rounded-xl mt-[10px] ml-[55px] flex items-center justify-center absolute" id="colorDiv">
+                    <h3 class="text-[70px]" style="letter-spacing: 5px;" id="text">17</h3>
+                </div>
+               
+                <img src="/img/circle-removebg-preview.png" alt="circle" class="mt-[180px]">
+                <div class="w-[12px] h-[16px] border-x-[6px] border-solid border-b-[16px] border-x-[transparent] border-b-[#000] absolute top-[40%] left-[30%] translate-x-[-0%] translate-y-[-50%] rotate-[180deg]"></div>
+                    <h5 class="top-[37.5%] left-[43.5%] absolute">TEMP</h5>
+                    <div class="w-[12px] h-[16px] border-x-[6px] border-solid border-b-[16px] border-x-[transparent] border-b-[#000] absolute top-[40%] left-[70%] translate-x-[-50%] translate-y-[-50%] " ></div>
+                    <div class="flex ml-[40px]">
+                        <button class="border-none w-[80px] h-[25px] bg-white rounded-3xl mt-[-280px] " onclick="decrease()"></button>
+                        <button class="border-none w-[80px] h-[25px] bg-white rounded-3xl mt-[-280px] ml-[25px]" onclick="increase()"></button>
+                    </div>
+                    <div class="flex">
+                        <div class="flex mt-[-240px] ml-[20px]">
+                        <p class="ml-[20px] absolute">MODE</p>
+                        <p class="ml-[80px] absolute">ON/OFF</p>
+                        <p class="ml-[150px]">FAN SPEED</p>
+                    </div>
+                        <button class="bg-white w-[40px] h-[20px] rounded-3xl ml-[185px] mt-[-210px] absolute"></button>
+                        <button class="w-[80px] h-[25px] bg-[#cb5456] rounded-3xl ml-[-165px] mt-[-210px]"  id="fadeButton"></button>
+                        <button class="bg-white w-[40px] h-[20px] rounded-3xl ml-[-130px] mt-[-210px] "></button>
+                    </div>
+                    <div class="flex mt-[-175px] ml-[20px]">
+                        <p class="ml-[20px] absolute">SWING</p>
+                        <p class="ml-[90px] absolute">SLEEP</p>
+                        <p class="ml-[150px]">TIMER ON</p>
+                    </div>
+                    <div class="ml-[30px]">
+                        <button class="bg-white w-[40px] h-[20px] rounded-3xl ml-[15px]"></button>
+                        <button class="bg-white w-[60px] h-[20px] rounded-3xl ml-[15px]"></button>
+                        <button class="bg-white w-[40px] h-[20px] rounded-3xl ml-[15px]"></button>
+                    </div>
+                    <div class="flex ml-[59px]">
+                        <p class="text-[15px]">RESET LOCK</p>
+                        <p class="ml-[10px] text-[15px]">TIMER OFF</p>
+                    </div>
+                    <div class="ml-[90px]">
+                    <div class="w-[11px] h-[11px] bg-red-200 absolute rounded-full"></div>
+                    <div class="w-[11px] h-[11px] bg-red-200 absolute rounded-full ml-[30px]"></div>
+                        <button class="bg-white w-[40px] h-[20px] rounded-3xl ml-[95px]"></button>
+                </div>
+                <div class="flex">
+                    <p class="text-center text-[14px] mt-[-20px] ml-[20px]">AIR <br> DIRECTION</p>
+                    <p class="text-center text-[14px] ml-[110px] mt-[-10px] absolute">LED <br> DISPLAY</p>
+                    <p class=" text-[14px] ml-[80px]">TURBO</p>
+                </div>
+                <div class="flex ml-[40px] mt-[10px]">
+                    <button class="bg-white w-[23px] h-[23px] rounded-3xl ml-[15px] mt-[-5px]"></button>
+                    <button class="bg-white w-[23px] h-[23px] rounded-3xl ml-[50px]"></button>
+                    <button class="bg-white w-[23px] h-[23px] rounded-3xl ml-[40px] mt-[-10px]"></button>
+                </div>
+            </div>
+            <img src="/img/logo.png" alt="logo" class="mt-[480px] ml-[40px]" width="230">
+            <p class="text-black mt-[-72.5px] ml-[40px] TEXT">by midea technology</p>
+        </div>
+    </header>
+    <audio id="audio" src="/sound/button-2-214383.mp3"></audio>
+</body>
+<script src="/script.js"></script>
+</html>
